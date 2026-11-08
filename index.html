@@ -1,0 +1,543 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For u Riz</title>
+
+    <style>
+        /* =========================
+           RESET & GLOBAL
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #252525;
+            min-height: 100vh;
+            padding: 50px 20px;
+        }
+
+        /* =========================
+           MAIN CONTAINER
+        ========================= */
+
+        .container {
+            max-width: 760px;
+            width: 100%;
+            margin: auto;
+            padding: 45px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 35px rgba(0,0,0,0.06);
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .label {
+            font-size: 11px;
+            letter-spacing: 4px;
+            color: #999;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-size: 19px;
+            font-weight: normal;
+            color: #888;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        /* =========================
+           IMAGE 16:9
+        ========================= */
+
+        .image-container {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            border-radius: 12px;
+            margin: 25px 0;
+            background: #eee;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .image-caption {
+            font-size: 12px;
+            color: #999;
+            margin-top: -15px;
+            margin-bottom: 25px;
+        }
+
+        /* =========================
+           PARAGRAPH
+        ========================= */
+
+        .content p {
+            font-size: 15px;
+            line-height: 1.9;
+            color: #555;
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+
+        /* =========================
+           MUSIC PLAYER
+        ========================= */
+
+        .music-player {
+            margin-top: 35px;
+            padding: 25px;
+            background: #f5f5f5;
+            border-radius: 12px;
+        }
+
+        .music-info {
+            margin-bottom: 20px;
+        }
+
+        .music-info h3 {
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+
+        .music-info span {
+            font-size: 13px;
+            color: #888;
+        }
+
+        /* PROGRESS BAR */
+
+        .progress-container {
+            width: 100%;
+            height: 5px;
+            background: #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .progress {
+            width: 0%;
+            height: 100%;
+            background: #252525;
+            border-radius: 10px;
+        }
+
+        /* TIME */
+
+        .time {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            color: #888;
+        }
+
+        /* CONTROLS */
+
+        .controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            border: none;
+            background: #252525;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        .volume-control {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        input[type="range"] {
+            width: 100px;
+            accent-color: #252525;
+            cursor: pointer;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 11px;
+            color: #aaa;
+            letter-spacing: 1px;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 20px 12px;
+            }
+
+            .container {
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+
+            .content p {
+                font-size: 14px;
+            }
+
+            .music-player {
+                padding: 18px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- HEADER -->
+
+        <div class="label">
+            Pesan Tertutup
+        </div>
+
+        <h1>Kuat-kuat ya Rizzz</h1>
+
+        <h2>
+           Pernah kebayang ga Rizzz? kalo semua usaha lu tu sia-sia?
+        </h2>
+
+
+        <!-- IMAGE 16:9 -->
+
+        <div class="image-container">
+
+            <img
+                src="foto.jpg.jpeg"
+                alt="Tau?"
+            >
+
+        </div>
+
+        <div class="image-caption">
+            Gimana Rizzz? paru-paru aman ga wkwk. 
+        </div>
+
+
+        <!-- CONTENT -->
+
+        <div class="content">
+
+            <p>
+                Gw tau lu mungkin bertanya-tanya gw tu siapa dan buat apa ini semua?
+                Pertama, gw ahli UI/UX yang kita tu jalan bareng dalam lewatin kuliah, maaf untuk identitas gw gabakal bilang karena ini juga demi kebaikan lu nya Rizzz. Kedua, jasa lu ke gw tu banyak banget jadi izinin gw untuk bantu lu kali ni. Ketiga, lu orangnya baik banget dan ringan tangan buat nolongin orang lain sehingga gw ga tega liat lu terluka gara-gara cewe yang baru lu kenal ini.
+            </p>
+
+            <p>
+                Rizzz jangan sedih dulu. gw mau cerita ni tipis-tipis ya. Jangan lupa hidupin musiknya wkwk. Jadi gini Rizzz, lu pernah ga kepikiran dia bakalan kek yg di foto itu? lu ga perlu raguin gw karena foto itu gamungkin AI juga kan. Gw ada banyak sebenarnya pengen lah cerita ke lu, tapi gw takut lu nya ntar sakit Rizzz, sedangkan lu juga Fotografer kan di kampus. Intinya, jangan sampai sakit dan semangat terus untuk kuliah ya.
+            </p>
+
+            <p>
+                Dan satu lagi Rizzz, bukan cuma lu doang yang ada dihatinya. Lu gatau dia keluar bareng siapa aja, Telfonan bareng siapa aja, Sleepcall bareng siapa dan lu ga pernah tau lebih dalam tentang dia dari orang lain kan? Kasian banget lu sumpah.
+            </p>
+
+            <p>
+                Tapi lu hebat Rizzz bisa bertahan. Nih satu lagi, dia pernah ga cerita kalo keluar malem jumpain cowo yang di foto ama lu? ga pernah kan wkwk, lu harusnya sadar si Rizzz. Gapapa kalo memang lu nya ga percaya ama info dari gw yg anonim ini. Tapi satu hal pasti Rizzz, lu ga pantes untuk dicintai.
+            </p>
+
+            <p>
+              Itu wanita kesayangan yang lu bangga-banggain itu? Wakil UKM lu yg manis itu? wkwk setelah tau ini gimana, masih manis ga? Bangsat lu Rizzz, gw ga espek lu bakalan punya perasaan ama dia, mungcung lu doang yang kemarin gamau tapi apa? kepincut juga kan wkwk.
+            </p>
+
+            <p> Sehat selalu Rizzz, tujuan kita masih panjang. Gelar Prof. atau cewe itu? Ingat tujuan lu Rizzz. Ni kuliah jadiin batu loncatan, bukan drop cuma karena cewe sebiji itu. Dah lah, GoodLuck.</p>
+
+        </div>
+
+
+        <!-- MUSIC PLAYER -->
+
+        <div class="music-player">
+
+            <div class="music-info">
+
+                <h3>Bernaung</h3>
+
+                <span>Feby Putri</span>
+
+            </div>
+
+            <!-- AUDIO FILE -->
+
+            <audio id="audio">
+                <source src="sad.mp3" type="audio/mpeg">
+                Browser tidak mendukung audio.
+            </audio>
+
+
+            <!-- PROGRESS BAR -->
+
+            <div
+                class="progress-container"
+                id="progressContainer"
+            >
+
+                <div
+                    class="progress"
+                    id="progress"
+                ></div>
+
+            </div>
+
+
+            <!-- TIME -->
+
+            <div class="time">
+
+                <span id="currentTime">0:00</span>
+
+                <span id="duration">0:00</span>
+
+            </div>
+
+
+            <!-- CONTROLS -->
+
+            <div class="controls">
+
+                <button id="playBtn">
+                    ▶ Play
+                </button>
+
+                <div class="volume-control">
+
+                    <label for="volume">
+                        Volume
+                    </label>
+
+                    <input
+                        type="range"
+                        id="volume"
+                        min="0"
+                        max="1"
+                        step="0.01"
+                        value="0.7"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+            © 2026 — For You Shadow BestFriend 
+        </footer>
+
+    </main>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
+
+    <script>
+
+        // ELEMENTS
+
+        const audio = document.getElementById("audio");
+
+        const playBtn = document.getElementById("playBtn");
+
+        const progress = document.getElementById("progress");
+
+        const progressContainer =
+            document.getElementById("progressContainer");
+
+        const currentTime =
+            document.getElementById("currentTime");
+
+        const duration =
+            document.getElementById("duration");
+
+        const volume =
+            document.getElementById("volume");
+
+
+        // FORMAT WAKTU
+
+        function formatTime(time) {
+
+            if (!Number.isFinite(time)) return "0:00";
+
+            const minutes = Math.floor(time / 60);
+
+            const seconds = Math.floor(time % 60);
+
+            return minutes + ":" +
+                String(seconds).padStart(2, "0");
+
+        }
+
+
+        // PLAY & PAUSE
+
+        playBtn.addEventListener("click", () => {
+
+            if (audio.paused) {
+
+                audio.play().catch(error => {
+                    console.log("Audio gagal diputar:", error);
+                });
+
+            } else {
+
+                audio.pause();
+
+            }
+
+        });
+
+
+        // BUTTON STATUS
+
+        audio.addEventListener("play", () => {
+
+            playBtn.textContent = "❚❚ Pause";
+
+        });
+
+        audio.addEventListener("pause", () => {
+
+            playBtn.textContent = "▶ Play";
+
+        });
+
+
+        // UPDATE PROGRESS
+
+        audio.addEventListener("timeupdate", () => {
+
+            if (audio.duration) {
+
+                const percent =
+                    (audio.currentTime / audio.duration) * 100;
+
+                progress.style.width = percent + "%";
+
+                currentTime.textContent =
+                    formatTime(audio.currentTime);
+
+            }
+
+        });
+
+
+        // LOAD DURATION
+
+        audio.addEventListener("loadedmetadata", () => {
+
+            duration.textContent =
+                formatTime(audio.duration);
+
+        });
+
+
+        // SEEK MUSIC
+
+        progressContainer.addEventListener("click", (event) => {
+
+            if (!audio.duration) return;
+
+            const rect =
+                progressContainer.getBoundingClientRect();
+
+            const position =
+                (event.clientX - rect.left) / rect.width;
+
+            audio.currentTime =
+                Math.max(0, Math.min(1, position)) * audio.duration;
+
+        });
+
+
+        // VOLUME
+
+        volume.addEventListener("input", () => {
+
+            audio.volume = Number(volume.value);
+
+        });
+
+        audio.volume = 0.7;
+
+
+        // RESET PROGRESS WHEN SONG ENDS
+
+        audio.addEventListener("ended", () => {
+
+            progress.style.width = "0%";
+
+            currentTime.textContent = "0:00";
+
+            playBtn.textContent = "▶ Play";
+
+        });
+
+    </script>
+
+</body>
+</html>
